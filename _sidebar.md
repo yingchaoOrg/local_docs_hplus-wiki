@@ -3,5 +3,5 @@
 - [模型表单](/ui/form)
 - [内置组件](/ui/components)
 - [自定义组件](/ui/custom)
-- [CSS/Javascript](/ui/frontend)
+- [JS动态注入](/ui/js)
 - [第三方扩展](/ui/thirdparty)
