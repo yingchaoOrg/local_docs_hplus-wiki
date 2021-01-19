@@ -1,27 +1,31 @@
-## HPlus Admin，全新admin插件 快速开发框架，
-##### Admin插件使用体验和laravel-admin用法差不多
-##### auth组件采用<a href="https://github.com/qbhy/hyperf-auth">hyperf-auth</a>，目前支持 jwt、session 驱动。用户可以自行扩展。使用体验大体和 laravel 的 auth 差不多
-##### 灵活可替换的权限验证组件，HPlus提供权限验证，也可以替换自己的权限验证插件
-
-## 演示地址：
-##### <a href="http://shop.sh.cn/auth">http://shop.sh.cn/auth</a>
-##### 账户 admin
-##### 密码 admin
-
-#### 欢迎加入HPlus交流群，群聊号码：512465490
-点击链接加入群聊【hyperf-admin交流群】：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=pCkT8bLR-scfzGhiLYAu2AuEu5pzOfdD&authKey=0L9w5QrmZJQpDdaH9R5WpPK5mUPyh1RiM3nqcRggpMpM8heAgBBXWdzuk9zkyRko&noverify=0">群聊号码：512465490</a>
-<p align="center">
-    <a href="https://github.com/hyperf-plus/admin/releases"><img src="https://poser.pugx.org/hyperf-plus/admin/v/stable" alt="Stable Version"></a>
-    <a href="https://packagist.org/packages/hyperf-plus/admin"><img src="https://poser.pugx.org/hyperf-plus/admin/downloads" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/hyperf-plus/admin"><img src="https://poser.pugx.org/hyperf-plus/admin/d/monthly" alt="Monthly Downloads"></a>
-    <a href="https://www.php.net"><img src="https://img.shields.io/badge/php-%3E=7.3-brightgreen.svg?maxAge=2592000" alt="Php Version"></a>
-    <a href="https://github.com/swoole/swoole-src"><img src="https://img.shields.io/badge/swoole-%3E=4.5-brightgreen.svg?maxAge=2592000" alt="Swoole Version"></a>
-    <a href="https://github.com/hyperf-plus/admin/blob/master/LICENSE"><img src="https://img.shields.io/github/license/hyperf-plus/admin.svg?maxAge=2592000" alt="HyperfAdmin License"></a>
-</p>
-#### laravel版本地址  <a href="https://github.com/SmallRuralDog/laravel-vue-admin">laravel-vue-admin</a>
 
 ### 安装
+### 服务器要求
+    Hyperf 对系统环境有一些要求，仅可运行于 Linux 和 Mac 环境下，但由于 Docker 虚拟化技术的发展，在 Windows 下也可以通过 Docker for Windows 来作为运行环境，通常来说 Mac 环境下，我们更推荐本地环境部署，以避免 Docker 共享磁盘缓慢导致 Hyperf 启动速度慢的问题。
+    
+    hyperf\hyperf-docker 项目内已经为您准备好了各种版本的 Dockerfile ，或直接基于已经构建好的 hyperf\hyperf 镜像来运行。
+    
+    当您不想采用 Docker 来作为运行的环境基础时，您需要确保您的运行环境达到了以下的要求：
+    
+    PHP >= 7.2
+    Swoole PHP 扩展 >= 4.5，并关闭了 Short Name
+    OpenSSL PHP 扩展
+    JSON PHP 扩展
+    PDO PHP 扩展 （如需要使用到 MySQL 客户端）
+    Redis PHP 扩展 （如需要使用到 Redis 客户端）
+    Protobuf PHP 扩展 （如需要使用到 gRPC 服务端或客户端）
 
+ -  更多请参考hyperf官方 [安装要求和Docker安装方式](https://hyperf.wiki/2.1/#/zh-cn/quick-start/install)
+
+### 全新安装
+- 创建hyperf应用
+```php
+composer create-project hyperf/hyperf-skeleton
+```
+- 创建完毕后配置数据库
+- 按照下方`已有项目安装`方式进行安装
+
+### 已有项目安装
 - 1、安装Admin插件
 ```bash
      Hyperf2.0版本
@@ -96,17 +100,8 @@ return [
 ```
 - 8、启动服务
 ```bash
-	php bin/hyperf.php start
+php bin/hyperf.php start
 ```
 ### 访问 http://127.0.0.1:9501/auth
 - 账户 admin
 - 密码 admin
-
-#### 以插件形式开箱即用
-#### 可以做到无需VUE前端可实现快速开发各种表单
-
-### 赞助
-#### 1、开源不易，如果此项目能够帮到您，希望点个star
-#### 2、欢迎您的捐赠
-<img src="https://gitee.com/hyperf-plus/image/raw/master/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg" width="500" alt="HyperfAdmin License">
-<img src="//ia.51.la/go1?id=21039519&pvFlag=1" style="border:none" />
