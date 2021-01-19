@@ -27,4 +27,4 @@
 ### 赞助
 #### 1、开源不易，如果此项目能够帮到您，希望点个star
 #### 2、欢迎您的捐赠
-<img src="https://gitee.com/hyperf-plus/image/raw/master/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg" width="500" alt="HyperfAdmin License">
+![donate](screenshot/donate.png ':size=575')
