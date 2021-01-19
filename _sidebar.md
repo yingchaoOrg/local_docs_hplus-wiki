@@ -16,21 +16,19 @@
   * [JS动态注入](/ui/js)
   * [第三方扩展](/ui/thirdparty)
 
-* 验证器组件(待完善)
-  * [介绍](/validate/readme.md)
-* 权限组件(待完善)
-  * [介绍](/permission/readme.md)
-* 开发者工具(待完善)
-  * [介绍](/devtool/readme.md)
-  
-* 路由组件(待完善)
-  * [介绍](/route/readme.md)
-
-* 助手插件(待完善)
-  * [介绍](/helper/readme.md)
-
-* 注解文档插件(待完善)
-  * [介绍](/swagger/readme.md)
+* 其他插件
+  * 验证器组件(待完善)
+    * [介绍](/validate/readme.md)
+  * 权限组件(待完善)
+    * [介绍](/permission/readme.md)
+  * 开发者工具(待完善)
+    * [介绍](/devtool/readme.md)
+  * 路由组件(待完善)
+    * [介绍](/route/readme.md)
+  * 助手插件(待完善)
+    * [介绍](/helper/readme.md)
+  * 注解文档插件(待完善)
+    * [介绍](/swagger/readme.md)
 * 版本升级指南
   * 暂无
   
