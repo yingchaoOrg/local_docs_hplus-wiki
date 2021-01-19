@@ -41,7 +41,7 @@
             '/.*/_navbar.md': '/_navbar.md',
         },
         plugins: [
-            EditOnGiteePlugin.create('https://gitee.com/hyperf-plus/wiki/edit/master/'),
+            EditOnGithubPlugin.create('https://gitee.com/hyperf-plus/wiki/edit/master/'),
             function (hook) {
                 hook.doneEach(function () {
                     pangu.spacingElementByClassName('content')
