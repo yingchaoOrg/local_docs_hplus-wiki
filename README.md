@@ -18,7 +18,8 @@
     <a href="https://github.com/swoole/swoole-src"><img src="https://img.shields.io/badge/swoole-%3E=4.5-brightgreen.svg?maxAge=2592000" alt="Swoole Version"></a>
     <a href="https://github.com/hyperf-plus/admin/blob/master/LICENSE"><img src="https://img.shields.io/github/license/hyperf-plus/admin.svg?maxAge=2592000" alt="HyperfAdmin License"></a>
 </p>
-#### laravel版本地址  <a href="https://github.com/SmallRuralDog/laravel-vue-admin">laravel-vue-admin</a>
+
+####  laravel版本地址  <a href="https://github.com/SmallRuralDog/laravel-vue-admin">laravel-vue-admin</a>
 
 #### 以插件形式开箱即用
 #### 可以做到无需VUE前端可实现快速开发各种表单
@@ -27,4 +28,3 @@
 #### 1、开源不易，如果此项目能够帮到您，希望点个star
 #### 2、欢迎您的捐赠
 <img src="https://gitee.com/hyperf-plus/image/raw/master/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg" width="500" alt="HyperfAdmin License">
-<img src="//ia.51.la/go1?id=21039519&pvFlag=1" style="border:none" />
