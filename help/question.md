@@ -10,6 +10,8 @@
         'document_root' => BASE_PATH . '/public',
         'enable_static_handler' => true      
         ```
+
+   
 ### 2 其他问题，请在群里反馈
 
 Hyperf-admin交流群1:`512465490`<a href="https://qm.qq.com/cgi-bin/qm/qr?k=pCkT8bLR-scfzGhiLYAu2AuEu5pzOfdD&authKey=0L9w5QrmZJQpDdaH9R5WpPK5mUPyh1RiM3nqcRggpMpM8heAgBBXWdzuk9zkyRko&noverify=0">点击加入</a>  
