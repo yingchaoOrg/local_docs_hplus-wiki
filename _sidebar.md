@@ -2,6 +2,7 @@
     * [项目介绍](/README.md)
     * [安装](/ui/install.md)
     * [线上交流](/communication.md)
+    * [常见问题](/help/question.md)
     * [更新日志](/logs.md)
     * [捐献及赞助](/donate.md)
 * 组件
