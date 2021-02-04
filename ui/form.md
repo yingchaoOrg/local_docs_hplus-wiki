@@ -105,7 +105,7 @@ $form->item()->defaultValue();
 ```
 ### 设置TAB栏
 用于分割表单字段，默认为`基本信息`
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921369569-79bd2c33-303c-48e7-b043-3f8e68c958ce.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921369569-79bd2c33-303c-48e7-b043-3f8e68c958ce.png#)
 ```php
 $form->item('username', '用户名')->tab("用户信息");
 //注意，要开启tab，必须设置

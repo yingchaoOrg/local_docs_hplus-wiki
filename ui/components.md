@@ -23,7 +23,7 @@ Card::make()->header(function (Content $content)
 ### Steps 步骤条
 
 引导用户按照流程完成任务的分步导航条，可根据实际应用场景设定步骤，步骤不得少于 2 步。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368352-b2680ea3-c0ef-48c9-be1e-0e561f03e15d.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368352-b2680ea3-c0ef-48c9-be1e-0e561f03e15d.png#)
 
 ```php
 Steps::make()
@@ -74,7 +74,7 @@ Text::make()->html("我是纯文本");
 ### Alert警告
 
 用于页面中展示重要的提示信息。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368388-8812d7d8-6e04-4763-8dcc-bec83eeb3a68.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368388-8812d7d8-6e04-4763-8dcc-bec83eeb3a68.png#)
 
 ```
 Alert::make("title","desc");
@@ -260,7 +260,7 @@ $grid->actions(function (Grid\Actions $actions) {
 ```
 
 Dialog代码示例
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368453-feda48ad-b470-4b2c-be21-5da698adcbab.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368453-feda48ad-b470-4b2c-be21-5da698adcbab.png#)
 
 ```php
 
@@ -395,7 +395,7 @@ InputNumber::make()
 
 ### Select 选择器
 
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368512-269cec96-bdf6-44c1-9347-82c59abeee47.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368512-269cec96-bdf6-44c1-9347-82c59abeee47.png#)
 
 ```php
 Select::make()
@@ -434,7 +434,7 @@ Select::make()->filterable()->remote($remoteUrl)->label($form, $label)
 
 ### Cascader 级联选择器
 
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368552-bc5f374b-f72f-45c7-94ba-f3567f5925b8.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368552-bc5f374b-f72f-45c7-94ba-f3567f5925b8.png#)
 当一个数据集合有清晰的层级结构时，可通过级联选择器逐级查看并选择 基础用法 模型导入`ModelTree`
 
 ```php
@@ -620,7 +620,7 @@ ColorPicker::make()
 
 ### Transfer 穿梭框
 
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368585-7b5ba05b-1ae1-4b89-be53-1b94146f42f6.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368585-7b5ba05b-1ae1-4b89-be53-1b94146f42f6.png#)
 
 ```php
 Transfer::make()->data($permissionModel::get()->map(function ($item) {
@@ -653,12 +653,12 @@ WangEditor::make()
 ## 统计图表
 
 g2plot 是一套简单、易用、并具备一定扩展能力和组合能力的统计图表库，基于图形语法理论搭建而成，"g2plot"中的 g2 即意指图形语法 (the Gramma of Graphics)，同时也致敬了 ggplot2。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368616-6315d1a3-0780-4e2b-bf79-165540c4fae4.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368616-6315d1a3-0780-4e2b-bf79-165540c4fae4.png#)
 
 ### Line - 折线图
 
 使用一条折线的线段显示数据在一个具有顺序性的维度上的变化。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368661-05ac0250-275d-413d-b8cf-bbcb6d3616c2.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368661-05ac0250-275d-413d-b8cf-bbcb6d3616c2.png#)
 
 ```php
 Line::make()
@@ -697,7 +697,7 @@ Line::make()
 ### StepLine - 阶梯折图
 
 阶梯线图用于表示连续时间跨度内的数据，它通常用于显示某变量随时间的变化模式：是上升还是下降，是否存在周期性的循环？因此，相对于独立的数据点，折线图关注的是全局趋势。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368692-c0bf5bfe-0780-4901-b0d3-e77869b4c997.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368692-c0bf5bfe-0780-4901-b0d3-e77869b4c997.png#)
 
 ```php
 StepLine::make()->data()->config();
@@ -709,7 +709,7 @@ StepLine::make()->data()->config();
 
 面积图又叫区域图。 它是在折线图的基础之上形成的，它将折线图中折线与自变量坐标轴之间的区域使用颜色或者纹理填充，这样一个填充区域我们叫做面积，颜色的填充可以更好的突出趋势信息。
 面积图用于强调数量随时间而变化的程度，也可用于引起人们对总值趋势的注意。他们最常用于表现趋势和关系，而不是传达特定的值。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368722-b00dccd7-543d-46dc-9e1d-7ae4fc0ed3ed.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368722-b00dccd7-543d-46dc-9e1d-7ae4fc0ed3ed.png#)
 
 ```php
 Area::make()->data()->config();
@@ -720,7 +720,7 @@ Area::make()->data()->config();
 ### Column - 柱状图
 
 柱状图用于描述分类数据之间的对比，如果我们把时间周期，如周、月、年，也理解为一种分类数据 (time category)，那么柱状图也可以用于描述时间周期之间的数值比较。
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921368769-30d9fa02-109d-4f9b-8627-2426a2f0caf1.png#)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921368769-30d9fa02-109d-4f9b-8627-2426a2f0caf1.png#)
 
 ```php
 Column::make()->data()->config();

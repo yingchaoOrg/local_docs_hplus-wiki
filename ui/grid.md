@@ -273,7 +273,7 @@ $filter->between("created_at", "名称")->component(DatePicker::make()->type("da
 使用`component`方法设置表单类型
 ### 标签页模式搜索
 例如：产品订单列表的 `全部 代付款 代发货` 等状态的快捷筛选
-![](https://cdn.nlark.com/yuque/0/2020/png/2539838/1599921369822-c579b0d0-d7af-40a0-8b18-abe042157738.png#align=left&display=inline&height=322&margin=%5Bobject%20Object%5D&originHeight=322&originWidth=1152&status=done&style=none&width=1152)
+![](http://static.hyperf.plus/yuque/0/2020/png/2539838/1599921369822-c579b0d0-d7af-40a0-8b18-abe042157738.png#align=left&display=inline&height=322&margin=%5Bobject%20Object%5D&originHeight=322&originWidth=1152&status=done&style=none&width=1152)
 ## 字段使用
 Table 的数据列
 ### 创建
