@@ -226,25 +226,52 @@ Icon::make()
 ```
 
 ### 动态 Dialog 对话框（推荐使用）
-目前此组件不能单独使用，需配合其他组件使用，如`Button`，`ActionButton`，`ToolbarButton`
-
+目前此组件不能单独使用，需配合其他组件使用，如`Button`，`BatchAction`，`ActionButton`，`ToolbarButton`
+![](/screenshot/dialog.png)
 
 例如在grid栏位中，使用
 如果设置url，则弹窗的布局是先请求这个url，获取到布局json并渲染到弹窗上，如果没有设置url则以slot设置的布局为准
 
-url中可选增加动态参数 如下所示 在url中增加{{key}} 则实际请求中会替换成该字段的值，$grid->column('username','...') prop的字段为username，则请求生成dialog布局的时候会携带点击行的username参数替换到url中，生成弹窗布局
+url中可选增加动态参数 如下所示 在url中增加{id} 则实际请求中会替换成该行id的值，生成弹窗布局
 ```php
-       $grid->column('username', '用户名')->component(Button::make("查看更多")->type('text')->dialog(function (Dialog $dialog) {
-            $dialog->setUrl('/admin/test/test?id={{key}}'); #如果设置url则弹窗的布局是请求这个url后得到的布局并渲染到页面上，如果没有设置url则以slot设置的布局为准
-            $dialog->title('哈哈啊哈哈哈');
-        }));
+        $grid->toolbars(function (Grid\Toolbars $toolbars) {
+            $toolbars->addRight(Grid\Tools\ToolButton::make('工具栏动态弹窗')->dialog(function (Dialog $dialog) {
+                $dialog->setUrl('/admin/test/testhhah');
+                $dialog->title('工具栏动态弹窗');
+            }));
+        });
+
+        $grid->batchActions(function (Grid\BatchActions $action) {
+            $action->add(Grid\BatchActions\BatchAction::make('批量选择后动态弹窗')->dialog(function (Dialog $dialog) {
+                $dialog->setUrl('/admin/test/testhhah?name=selectionKeys');
+                $dialog->title('批量选择后动态弹窗');
+            }));
+        });
+
+        $grid->column('username', '用户名')->component(
+            Button::make('查看更多')->type('text')->dialog(function (Dialog $dialog) {
+                $dialog->setUrl('/admin/test/testhhah?name={id}');
+                $dialog->title('栏位中弹窗');
+            })
+        );
+
+        $grid->actions(function (Grid\Actions $actions) {
+            $actions->add(Grid\Actions\ActionButton::make('查看')->dialog(function (Dialog $dialog) use ($actions) {
+                $id = $actions->getRow()->id;       #这里是当前行的ID
+                $dialog->title('查看');
+                $dialog->setUrl('/admin/test/testhhah?id={id}');
+            }));
+        });
+
 ```
 
 例如在form中，使用
-url中可选增加动态参数 如下所示 在url中增加{{key}} 则实际请求中会替换成该字段的值，$form->('edit','...') prop的字段为edit，则请求生成dialog布局的时候会携带当前表单中edit字段的值并生成弹窗布局
+![](/screenshot/dialog.png)
+
+url中可选增加动态参数 如下所示 在url中增加{key} 则实际请求中会替换成表单中该字段的值
 ```php
    $form->item('edit', 'hh')->component(Button::make('点击弹窗')->dialog(function (Dialog $dialog) {
-            $dialog->setUrl('/admin/test/test?id={{key}}');
+            $dialog->setUrl('/admin/test/test?id={key}');
             $dialog->title('查看弹窗');
         }));
 ```
