@@ -227,7 +227,7 @@ Icon::make()
 
 ### 动态 Dialog 对话框（推荐使用）
 目前此组件不能单独使用，需配合其他组件使用，如`Button`，`BatchAction`，`ActionButton`，`ToolbarButton`
-![](/screenshot/dialog.png)
+![](../screenshot/dialog.png)
 
 例如在grid栏位中，使用
 如果设置url，则弹窗的布局是先请求这个url，获取到布局json并渲染到弹窗上，如果没有设置url则以slot设置的布局为准
