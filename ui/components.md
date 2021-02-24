@@ -225,7 +225,31 @@ Image::make();
 Icon::make()
 ```
 
-### Dialog 对话框
+### 动态 Dialog 对话框（推荐使用）
+目前此组件不能单独使用，需配合其他组件使用，如`Button`，`ActionButton`，`ToolbarButton`
+
+
+例如在grid栏位中，使用
+如果设置url，则弹窗的布局是先请求这个url，获取到布局json并渲染到弹窗上，如果没有设置url则以slot设置的布局为准
+
+url中可选增加动态参数 如下所示 在url中增加{{key}} 则实际请求中会替换成该字段的值，$grid->column('username','...') prop的字段为username，则请求生成dialog布局的时候会携带点击行的username参数替换到url中，生成弹窗布局
+```php
+       $grid->column('username', '用户名')->component(Button::make("查看更多")->type('text')->dialog(function (Dialog $dialog) {
+            $dialog->setUrl('/admin/test/test?id={{key}}'); #如果设置url则弹窗的布局是请求这个url后得到的布局并渲染到页面上，如果没有设置url则以slot设置的布局为准
+            $dialog->title('哈哈啊哈哈哈');
+        }));
+```
+
+例如在form中，使用
+url中可选增加动态参数 如下所示 在url中增加{{key}} 则实际请求中会替换成该字段的值，$form->('edit','...') prop的字段为edit，则请求生成dialog布局的时候会携带当前表单中edit字段的值并生成弹窗布局
+```php
+   $form->item('edit', 'hh')->component(Button::make('点击弹窗')->dialog(function (Dialog $dialog) {
+            $dialog->setUrl('/admin/test/test?id={{key}}');
+            $dialog->title('查看弹窗');
+        }));
+```
+
+### Dialog 对话框 （旧版本）
 
 目前此组件不能单独使用，需配合其他组件使用，如`ActionButton`，`ToolbarButton`
 
@@ -235,6 +259,7 @@ Dialog::make()
     ->slot(function(Content $content){//弹窗内容组件，闭包传入一个content组件
 	});
 ```
+
 
 ### 操作组件
 

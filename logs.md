@@ -1,3 +1,13 @@
+## 2021-02-24 近期更新日志
+- 增加动态dialog弹窗
+- 修复编辑、创建隐藏按钮，修复select 值为0时默认和无效bug
+- 修复上传文件未读取配置文件
+#### 升级方法
+#### 更新包
+    composer update 
+#### 进行UI资源文件升级
+    php bin/hyperf.php ui:update 
+
 ## 2021-01-19 本周更新日志
 - 支持数据导出，用法与laravel-admin一致
 - 修复2.1版本的安装sql命令错误bug
