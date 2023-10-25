@@ -8,6 +8,16 @@
 ##### 账户 admin
 ##### 密码 admin
 
+## Local Docs
+> Docker 运行
+
+```bash
+# 临时运行 (停止后删除)
+docker run -p  34801:80 --name local_docs_hplus-wiki --rm ghcr.io/yingchaoorg/local_docs_hplus-wiki:master
+# 后台运行
+docker run -p  34801:80 --name local_docs_hplus-wiki -d ghcr.io/yingchaoorg/local_docs_hplus-wiki:master
+```
+
 #### 欢迎加入HPlus交流群，群聊号码：512465490
 点击链接加入群聊【hyperf-admin交流群】：<a href="https://qm.qq.com/cgi-bin/qm/qr?k=pCkT8bLR-scfzGhiLYAu2AuEu5pzOfdD&authKey=0L9w5QrmZJQpDdaH9R5WpPK5mUPyh1RiM3nqcRggpMpM8heAgBBXWdzuk9zkyRko&noverify=0">群聊号码：512465490</a>
 <p align="center">
